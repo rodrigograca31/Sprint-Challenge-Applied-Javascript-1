@@ -23,7 +23,7 @@ Header = () => {
 
 	date.innerText = new Date().toDateString();
 	h1.innerText = "Lambda Times";
-	h1.temp = "20°";
+	temp.innerText = "20°";
 
 	return header;
 }
