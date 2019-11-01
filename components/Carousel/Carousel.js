@@ -94,7 +94,26 @@ Carousel = () => {
 		}
 	});
 
-	// no animation code for left btn
+
+	// no animation code
+	
+	// rightButton.addEventListener("click", (event) => {
+	// 	console.log("click");
+	// 	const currActive = carousel.querySelector(".active");
+	// 	console.log(currActive.nextSibling);
+	// 	console.log(currActive);
+
+	// 	if (currActive.nextSibling != null) {
+	// 		currActive.classList.remove("active")
+
+	// 		if (currActive.nextSibling.tagName != "DIV") {
+	// 			currActive.nextSibling.classList.add("active")
+	// 		} else {
+	// 			carousel.querySelector("img").classList.add("active");
+	// 		}
+	// 	}
+	// });
+
 	// leftButton.addEventListener("click", (event) => {
 	// 	console.log("click");
 	// 	const currActive = carousel.querySelector(".active");

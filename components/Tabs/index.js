@@ -28,6 +28,21 @@ Topic = (topicName) => {
 
 	topic.innerText = topicName;
 
+	topic.addEventListener("click", (event) => {
+		console.log("click");
+		console.log(event.currentTarget.innerText.toLowerCase());
+		console.log(document.querySelectorAll(".card:not([data-topic='javascript'])"));
+		console.log(document.querySelectorAll(".card:not([data-topic='" + event.currentTarget.innerText.toLowerCase() + "'])"));
+		
+		document.querySelectorAll(".card").forEach((item) => {
+			item.style.display = ""
+		});
+		document.querySelectorAll(".card:not([data-topic='" + event.currentTarget.innerText.toLowerCase() + "'])").forEach((item) => {
+			item.style.display = "none"
+		});
+		
+	})
+
 	return topic;
 }
 
